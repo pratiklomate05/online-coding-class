@@ -1,0 +1,30 @@
+
+/* Custom CSS for the Online Course Admissions Website */
+
+/* Import Google Fonts - 'Inter' is used for a modern, clean look */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+/* Apply Inter font to the body globally */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Keyframes for a subtle, slow pulse animation */
+@keyframes pulse-slow {
+    0%, 100% {
+        transform: scale(1);
+        filter: brightness(1);
+    }
+    50% {
+        transform: scale(1.01); /* Slightly increase size */
+        filter: brightness(1.2); /* Slightly brighten */
+    }
+}
+
+/* Apply the custom animation to elements with the 'animate-pulse-slow' class */
+.animate-pulse-slow {
+    animation: pulse-slow 4s infinite ease-in-out;
+}
+
+/* Tailwind CSS utility classes handle most of the layout, spacing, and colors.
+   This file is primarily for custom animations or specific global styles. */
